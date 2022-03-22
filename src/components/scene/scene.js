@@ -1,12 +1,11 @@
 import React from "react";
 
-function FirstSentence(){
+function Sentence(props){
     return(
       <div>
-        <p>El nostre heroi estava surant per l'espai sideral quan
-            a la llunyania va albirar una nau espacial</p>
+        <p>{props.name}</p>
       </div>
     );
 }
 
-export default FirstSentence;
+export default Sentence;
