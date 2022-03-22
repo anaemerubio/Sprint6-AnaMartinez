@@ -1,9 +1,10 @@
 import React from "react";
+import ListSentences from "./sentences";
 
 function Sentence(props){
     return(
       <div>
-        <p>{props.name}</p>
+        <ListSentences />
       </div>
     );
 }
