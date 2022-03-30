@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 export const Border = styled.div`
-border: 2px solid; 
+font-weight: bold;
+border: 3px solid; 
 border-radius: 20px;
 list-style: none;
 display: flex;
 justify-content: center;
 margin: 10px; 
-padding: 10px;  
-background-color: ${({ isSelected }) => isSelected ? "red" : ""};
-opacity: ${({ isSelected }) => isSelected ? "1" : "1"};
+padding: 10px;
+background-color: white ;
+background-color: ${({ isSelected }) => isSelected ? "lightblue" : ""};
 `;
 
 export const BackgroundMain = styled.div`
@@ -22,8 +23,11 @@ padding: 10px
 `;
 
 export const Button = styled.button`
+color: white;
+font-weight: bold;
 width: 50%;
 height: 50px;
+background-color: gray;
 `;
 
 export const ButtonHover = styled.button`

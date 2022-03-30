@@ -17,8 +17,8 @@ const Scene = props => {
     }
 
     return <BackgroundMain back = {props.story[line].img} >
-        <Button onClick={() => previous()}>Previous</Button>
-        <Button onClick={() => next()}>Next</Button>
+        <Button onClick={() => previous()}>PREVIOUS</Button>
+        <Button onClick={() => next()}>NEXT</Button>
 
         {props.story.map((data, position) => {
             return (
