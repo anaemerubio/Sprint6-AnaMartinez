@@ -16,19 +16,16 @@ const Scene = props => {
         };
     }
 
-
-    return <BackgroundMain back={props.story[line].img} >
-
+    return <BackgroundMain back = {props.story[line].img} >
         <Button onClick={() => previous()}>Previous</Button>
         <Button onClick={() => next()}>Next</Button>
 
-        {props.story.map((data, key) => {
+        {props.story.map((data, position) => {
             return (
-                <Border key={key} isSelected={key === line ? true : false} ><li key={key}>{data.txt}</li></Border>
+                <Border position = {position} isSelected = {position === line ? true : false} ><li position = {position} >{data.txt}</li></Border>
             )
         })
         }
-
     </BackgroundMain>
 }
 
