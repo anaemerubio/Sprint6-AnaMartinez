@@ -1,11 +1,9 @@
-import React from "react";
-import Sentence from "./components/scene/scene";
+import Scene from './components/scene/scene';
+import { dataStory } from './dataStory';
 
-function App(){
-  return(
-    <div>
-      <Sentence />
-    </div>
+function App() {
+  return (
+    <Scene story={dataStory} />
   );
 }
 
