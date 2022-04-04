@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import Scene from './components/scene/scene';
 import './App.css';
+import { dataStory } from './dataStory';
+import { useState } from 'react';
+import { ButtonHover } from './styles';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [condition, setCondition] = useState(true);
+  return ( condition ?
+    <div className='home'>
+      <h1>Click the button to start your story</h1>
+      <ButtonHover onClick={() => setCondition(false)}>START</ButtonHover>
     </div>
+
+    : <ul><Scene story={dataStory} /></ul>
   );
 }
 
