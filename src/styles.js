@@ -14,7 +14,7 @@ background-color: ${({ isSelected }) => isSelected ? "lightblue" : ""};
 `;
 
 export const BackgroundMain = styled.div`
-background-image: url("${ ({back}) => back }");
+background-image: url("${ ({bg}) => bg }");
 height: 100vh;
 width: 100%;
 background-repeat: no-repeat;
@@ -32,6 +32,7 @@ background-color: gray;
 
 export const ButtonHover = styled.button`
 margin-top: 20px;
+font-weight: bold;
 width: 150px;
 height: 50px;
 border-radius: 40px;
